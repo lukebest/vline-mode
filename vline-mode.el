@@ -115,12 +115,12 @@ Available values are followings:
 
 
 (defface vline
-  '((t (:background "light steel blue")))
+  '((t (:background "grey11")))
   "A default face for vertical line highlighting."
   :group 'vline)
 
 (defface vline-visual
-  '((t (:background "gray90")))
+  '((t (:background "gray11")))
   "A default face for vertical line highlighting in visual lines."
   :group 'vline)
 
@@ -151,7 +151,7 @@ if `truncate-lines' is non-nil."
 	  (const force))
   :group 'vline)
 
-(defcustom vline-use-timer t
+(defcustom vline-use-timer nil
   "If non-nil, use idle timer instead of (post|after)-command-hook."
   :type 'boolean
   :group 'vline)
